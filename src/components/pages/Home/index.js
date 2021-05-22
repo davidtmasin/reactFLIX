@@ -1,14 +1,14 @@
 import React from 'react';
 // Importação de componentes
-import Menu from './components/Menu';
-import BannerMain from './components/BannerMain';
-import Carousel from './components/Carousel';
-import Footer from './components/Footer';
+import Menu from '../../Menu';
+import BannerMain from '../../BannerMain';
+import Carousel from '../../Carousel';
+import Footer from '../../Footer';
 // Importação dos dados JSON
-import dadosIniciais from './data/dados_iniciais.json';
+import dadosIniciais from '../../../data/dados_iniciais.json';
 
 
-function App() {
+function Home() {
   return (
     <div style={{background:"#141414"}}>
         <Menu />
@@ -38,10 +38,15 @@ function App() {
             category={dadosIniciais.categorias[3]}
         />
 
+        <Carousel
+            
+            category={dadosIniciais.categorias[4]}
+        />
+
         <Footer />
 
     </div>
   );
 }
 
-export default App;
+export default Home;

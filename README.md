@@ -81,3 +81,7 @@ a{
 
 # 7.2 Instalar extensão do styled components no VSCODE
 > vscode-styled-components
+
+# 8. Instalar o componente REACT-ROUTER-DOM
+> npm install react-router-dom
+> yarn add react-router-dom
