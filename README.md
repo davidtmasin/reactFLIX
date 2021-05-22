@@ -85,3 +85,7 @@ a{
 # 8. Instalar o componente REACT-ROUTER-DOM
 > npm install react-router-dom
 > yarn add react-router-dom
+
+# 9. Instalar lib que será util para fazer um SLIDER de imagens
+> npm install react-slick
+> yarn add react-slick
