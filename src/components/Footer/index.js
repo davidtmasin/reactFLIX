@@ -13,7 +13,7 @@ function Footer() {
         <a href="https://github.com/davidtmasin" target="_blank" rel="noreferrer"> 
         David Teixeira
         </a>
-        {' '} durante a Imersão React da Alura
+        {' '} durante a Imersão React da Alura.
       </p>
     </FooterBase>
   );

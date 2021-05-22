@@ -14,7 +14,7 @@ function Menu() {
     return(
         <nav className="Menu">
             <Link to="/">
-                <img className="myLogo" src={myLogo} alt="MasinFLIX Logo" title="Welcome to MasinFLIX"/>
+                <img className="myLogo" src={ myLogo } alt="MasinFLIX Logo" title="Welcome to MasinFLIX"/>
             </Link>
 
             {/* Fizemos o Button comportar-se como a tag <a> */}

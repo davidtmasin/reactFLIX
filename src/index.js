@@ -11,6 +11,7 @@ import {
 
 import Home from './components/pages/Home';
 import VideoRegister from './components/pages/register/Video';
+import CategoryRegister from './components/pages/register/Category';
 import NotFoundPage from './components/pages/NotFound';
 
 
@@ -22,11 +23,13 @@ ReactDOM.render(
 
         <Switch> {/* Responsável pela troca de páginas, é como de fosse IF para definir qual rota que é a escolhida*/}
 
-            <Route path="/" component={Home} exact /> {/* O Route declara cada uma das páginas que temos. O termo 'exact' força a ideia de que tem que ser examente o path que foi fornecido*/}
+            <Route path="/" component={ Home } exact /> {/* O Route declara cada uma das páginas que temos. O termo 'exact' força a ideia de que tem que ser examente o path que foi fornecido*/}
 
-            <Route path="/register/video" component={VideoRegister} exact />
+            <Route path="/register/video" component={ VideoRegister }  />
 
-            <Route component={NotFoundPage} />
+            <Route path="/register/category" component={ CategoryRegister }  />
+
+            <Route component={ NotFoundPage } />
 
         </Switch>
 
