@@ -102,6 +102,10 @@
     {
       "titulo": "Filmes",
       "cor": "orange",
+      "link_extra": {
+        "text": "Filmes Tecnológicos",
+        "url": "https://www.youtube.com/results?search_query=Filmes+Tecnol%C3%B3gicos"
+      },
       "videos": [
         {
           "titulo": "Interestellar",

@@ -3,7 +3,7 @@ import React from 'react';
 import SlickSlider from 'react-slick';
 import styled from 'styled-components';
 
-const Container = styled.ul`
+export const Container = styled.ul`
   padding: 0;
   margin: 0;
   .slick-prev,
@@ -15,7 +15,7 @@ const Container = styled.ul`
     width: 30px;
     height: 30px;
     transform: initial;
-    &:before {
+    &::before {
       font-size: 30px;
     }
   }
@@ -42,9 +42,9 @@ export const SliderItem = styled.li`
 const Slider = ({ children }) => (
   <Container>
     <SlickSlider {...{
-      dots: false,
+      dots: true,
       infinite: false,
-      speed: 300,
+      speed: 200,
       centerMode: false,
       variableWidth: true,
       adaptiveHeight: true,
