@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import FormField from '../../../FormField';
 import PageDefault from '../../../PageDefault';
 
 function CategoryRegister() {
@@ -53,21 +54,24 @@ function CategoryRegister() {
                 setValues(initialValues)              
             }}>
 
-                <div>
-                    {/* Campo 01 */}
-                    <label htmlFor="categoryName">
-                        Category Name: {' '}
-                        <input type="text"
-                        id="categoryName"
-                        value={values.name} 
-                        name="name"
-                        onChange={handleChange}
-                        />
-                    </label>
-                </div>
+                <FormField 
+                    label="Category Name: "
+                    value={values.name}
+                    name="name"
+                    type="text"
+                    onChange={handleChange}
+                />
 
-                <div>
-                    {/* Campo 02 */}
+                <FormField
+                    
+                    label="Description: "
+                    type="textarea"
+                    value={values.description}
+                    name="description"
+                    onChange={handleChange}
+                /> 
+
+                {/* <div>
                     <label htmlFor="descriptionArea">
                     {' '} Description: {' '}
                         <textarea type="text"
@@ -77,10 +81,18 @@ function CategoryRegister() {
                         onChange={handleChange}
                         />
                     </label>
-                </div>
+                </div> */}
                 
-                <div>
-                    {/* Campo 03 */}
+                <FormField
+                    label="Color: "
+                    type="color"
+                    value={values.description}
+                    name="color"
+                    onChange={handleChange}
+                />
+
+
+                {/* <div>
                     <label htmlFor="colorChange">
                     {' '} Color: {' '}
                         <input type="color"
@@ -90,7 +102,7 @@ function CategoryRegister() {
                         onChange={handleChange}
                         />
                     </label>
-                </div>
+                </div> */}
                 
                 <div>
                     <button>
